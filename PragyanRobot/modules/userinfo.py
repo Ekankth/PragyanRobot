@@ -31,7 +31,7 @@ from PragyanRobot import (
     BOT_NAME,
     BOT_USERNAME
 )
-from PragyanRobot import telethn as PragyanClient
+from PragyanRobot import telethn as PragyanTelethonClient
 from PragyanRobot.__main__ import STATS, TOKEN, USER_INFO
 from PragyanRobot.modules.disable import DisableAbleCommandHandler
 from PragyanRobot.modules.helper_funcs.chat_status import sudo_plus
@@ -166,7 +166,7 @@ def get_id(update: Update, context: CallbackContext):
             )
 
 
-@PragyanClient.on(
+@PragyanTelethonClient.on(
     events.NewMessage(
         pattern="/ginfo",from_users=(TIGERS or []) + (DRAGONS or []) + (DEMONS or [])
     ),
@@ -301,7 +301,7 @@ def info(update: Update, context: CallbackContext):
         disaster_level_present = True
 
     if disaster_level_present:
-        text += ' \n[<a href="https://t.me/mukeshbotzone/26">ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴋɴᴏᴡ ᴡʜᴀᴛ ɪs ᴅɪsᴀsᴛᴇʀ ʟᴇᴠᴇʟs.</a>]'.format(
+        text += ' \n[<a href="https://t.me/PragyanIITIANCHAT">ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴋɴᴏᴡ ᴡʜᴀᴛ ɪs ᴅɪsᴀsᴛᴇʀ ʟᴇᴠᴇʟs.</a>]'.format(
             bot.username
         )
 
@@ -342,7 +342,7 @@ def info(update: Update, context: CallbackContext):
                                 "ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"tg://settings"
                             ),
                             InlineKeyboardButton(
-                                "Dɪsᴀsᴛᴇʀ", url="https://t.me/mukeshbotzone/26"
+                                "Dɪsᴀsᴛᴇʀ", url="https://t.me/PragyanIITIANCHAT"
                             ),
                         ],
                         [
@@ -365,10 +365,10 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/Itz_legend_coder"
+                                "ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/PRAGYANIITIAN"
                             ),
                             InlineKeyboardButton(
-                                "ᴅɪsᴀsᴛᴇʀ", url="https://t.me/mukeshbotzone/26"
+                                "ᴅɪsᴀsᴛᴇʀ", url="https://t.me/PragyanIITIANCHAT"
                             ),
                         ],
                         [

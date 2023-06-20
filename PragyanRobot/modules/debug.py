@@ -48,7 +48,7 @@ async def i_do_nothing_yes(event):
                 )
 
 
-PRAGYANIITIANCHAT = os.getenv("PRAGYANIITIANCHAT")
+support_chat = os.getenv("SUPPORT_CHAT")
 
 
 @dev_plus

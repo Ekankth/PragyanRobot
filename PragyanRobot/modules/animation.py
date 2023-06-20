@@ -326,6 +326,6 @@ __help__ = """
  ❍ /kill  -  ᴛᴏ ᴋɪʟʟ  ᴜʀ ɢғ ᴅᴀᴅ
  ❍ /bombs -  ᴛᴏ sᴜᴄɪᴅᴇ ᴜʀsᴇʟғ
  ❍ /police - ᴛᴏ ᴄᴀʟʟ ᴍᴀsᴛᴇʀᴍɪɴᴅ ᴘᴏʟɪᴄᴇ
- ❍ ʙʏ pragyan @Pragyanbotzone
+ ❍ ʙʏ ᴍᴜᴋᴇsʜ @Mukeshbotzone
 """
 __mod_name__ = "⍟ ɢᴀᴍᴇ ⍟"

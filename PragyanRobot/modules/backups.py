@@ -17,7 +17,7 @@ import PragyanRobot.modules.sql.notes_sql as sql
 
 # from PragyanRobot.modules.rules import get_rules
 import PragyanRobot.modules.sql.rules_sql as rulessql
-from PragyanRobot import EVENT_LOGS,OWNER_ID, PRAGYANIITIANCHAT, dispatcher
+from PragyanRobot import EVENT_LOGS,OWNER_ID, PRAGYANIITIANCHAT_CHAT, dispatcher
 from PragyanRobot.__main__ import DATA_IMPORT
 from PragyanRobot.modules.connection import connected
 from PragyanRobot.modules.helper_funcs.alternate import typing_action
@@ -98,7 +98,7 @@ def import_data(update, context):
                 mod.__import_data__(str(chat.id), data)
         except Exception:
             msg.reply_text(
-                f"An error occurred while recovering your data. The process failed. If you experience a problem with this, please take it to @{PRAGYANIITIANCHAT}"
+                f"An error occurred while recovering your data. The process failed. If you experience a problem with this, please take it to @{PRAGYANIITIANCHAT_CHAT}"
             )
 
             EVENT_LOGS.exception(

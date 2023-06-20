@@ -3,14 +3,14 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 from PragyanRobot import BOT_NAME, BOT_USERNAME
-from PragyanRobot import pbot as mukesh
+from PragyanRobot import pbot as pragyan
 
 
-@mukesh.on_message(filters.command("write"))
+@pragyan.on_message(filters.command("write"))
 async def handwrite(_, message: Message):
     if not message.reply_to_message:
         text = message.text.split(None, 1)[1]
-        m = await mukesh.send_message(
+        m = await pragyan.send_message(
             message.chat.id, "`Please wait...,\n\nWriting your text...`"
         )
         API = f"https://api.sdbots.tk/write?text={text}"
@@ -23,7 +23,7 @@ sᴜᴄᴇssғᴜʟʟʏ ᴡʀɪᴛᴛᴇɴ ᴛᴇxᴛ 💘
 ❄ **ʟɪɴᴋ :** `{req}`
 """
         await m.delete()
-        await mukesh.send_photo(
+        await pragyan.send_photo(
             message.chat.id,
             photo=req,
             caption=caption,
@@ -33,7 +33,7 @@ sᴜᴄᴇssғᴜʟʟʏ ᴡʀɪᴛᴛᴇɴ ᴛᴇxᴛ 💘
         )
     else:
         lol = message.reply_to_message.text
-        m = await mukesh.send_message(
+        m = await pragyan.send_message(
             message.chat.id, "`Please wait...,\n\nWriting your text...`"
         )
         API = f"https://api.sdbots.tk/write?text={lol}"
@@ -46,7 +46,7 @@ sᴜᴄᴇssғᴜʟʟʏ ᴡʀɪᴛᴛᴇɴ ᴛᴇxᴛ 💘
 ❄ **ʟɪɴᴋ :** `{req}`
 """
         await m.delete()
-        await mukesh.send_photo(
+        await pragyan.send_photo(
             message.chat.id,
             photo=req,
             caption=caption,

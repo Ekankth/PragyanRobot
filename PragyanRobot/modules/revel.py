@@ -7,7 +7,7 @@ from PragyanRobot import (
     LOGGER,
     OWNER_ID,
     START_IMG,
-    PRAGYANIITIANCHAT,
+    SUPPORT_CHAT,
     TOKEN,
     StartTime,
     dispatcher,

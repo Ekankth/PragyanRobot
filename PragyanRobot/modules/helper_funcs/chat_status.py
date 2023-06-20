@@ -12,7 +12,7 @@ from PragyanRobot import (
     DEMONS,
     DEV_USERS,
     DRAGONS,
-    SUPPORT_CHAT,
+    PRAGYANIITIANCHAT,
     TIGERS,
     WOLVES,
     dispatcher,
@@ -178,7 +178,7 @@ def whitelist_plus(func):
             return func(update, context, *args, **kwargs)
         else:
             update.effective_message.reply_text(
-                f"You don't have access to use this.\nVisit @{SUPPORT_CHAT}"
+                f"You don't have access to use this.\nVisit @{PRAGYANIITIANCHAT}"
             )
 
     return is_whitelist_plus_func
